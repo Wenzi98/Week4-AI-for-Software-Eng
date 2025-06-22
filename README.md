@@ -1,7 +1,9 @@
 AI in Software Engineering: Assignment Repository
 
+
 Overview
 This repository contains my implementation of an assignment that evaluates AI applications in software engineering through theoretical analysis, practical implementation, and ethical reflection. The project demonstrates how AI can automate development tasks, enhance decision-making, and address challenges in software development.
+
 
 
 Part 1: Theoretical Analysis
