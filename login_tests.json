@@ -1,0 +1,60 @@
+{
+  "tests": [
+    {
+      "name": "Valid_Login",
+      "steps": [
+        {
+          "action": "navigate",
+          "url": "https://the-internet.herokuapp.com/login"
+        },
+        {
+          "action": "type",
+          "selector": "input#username",
+          "text": "tomsmith"
+        },
+        {
+          "action": "type",
+          "selector": "input#password",
+          "text": "SuperSecretPassword!"
+        },
+        {
+          "action": "click",
+          "selector": "button.radius"
+        },
+        {
+          "action": "assertText",
+          "selector": ".subheader",
+          "text": "Welcome to the Secure Area"
+        }
+      ]
+    },
+    {
+      "name": "Invalid_Login",
+      "steps": [
+        {
+          "action": "navigate",
+          "url": "https://the-internet.herokuapp.com/login"
+        },
+        {
+          "action": "type",
+          "selector": "input#username",
+          "text": "invalid_user"
+        },
+        {
+          "action": "type",
+          "selector": "input#password",
+          "text": "wrong_password"
+        },
+        {
+          "action": "click",
+          "selector": "button.radius"
+        },
+        {
+          "action": "assertText",
+          "selector": "#flash",
+          "text": "Your username is invalid!"
+        }
+      ]
+    }
+  ]
+}
